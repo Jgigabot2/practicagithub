@@ -1,4 +1,6 @@
+// Importa y ejecuta la función principal de Express para crear una aplicación
 const app = express();
+// Define el puerto en el que el servidor va a escuchar
 const PORT = 3000;
 
 app.use(express.static('public'));
