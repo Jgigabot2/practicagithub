@@ -1,7 +1,12 @@
 const app = express();
 const PORT = 3000;
 
+// Sirve archivos estáticos desde la carpeta "public"
 app.use(express.static('public'));
+
+// Permite que el servidor interprete datos en formato JSON
+// enviados en el cuerpo (body) de las peticiones HTTP
+
 app.use(express.json());
 
 app.get('/test', (req, res) => {
