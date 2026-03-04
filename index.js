@@ -12,6 +12,10 @@ app.use(express.static('public'));
 
 app.use(express.json());
 
+
+// Define una ruta GET en '/test'.
+// Cuando alguien accede a http://localhost:PORT/test,
+// el servidor responde con un objeto JSON.
 app.get('/test', (req, res) => {
     res.json({
         estado: "Exitoso.",
@@ -20,6 +24,9 @@ app.get('/test', (req, res) => {
     });
 });
 
+// Inicia el servidor y lo pone a escuchar en el puerto definido en la variable PORT.
+// Se Inicia mediante la consola escribiendo "node index.js"
+// Una vez que el servidor está activo, muestra un mensaje en la consola.
 app.listen(PORT, () => {
     console.log(`Escuchando en el puerto ${PORT}`)
 });
