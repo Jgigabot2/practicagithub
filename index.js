@@ -1,3 +1,4 @@
+const express = require('express')
 // Importa y ejecuta la función principal de Express para crear una aplicación
 const app = express();
 // Define el puerto en el que el servidor va a escuchar
