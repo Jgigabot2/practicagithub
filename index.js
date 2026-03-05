@@ -20,6 +20,14 @@ app.get('/test', (req, res) => {
     });
 });
 
+app.get('/saludo/:nombre', (req, res) => {
+    const nombre = req.params.nombre;
+
+    res.json({
+        mensaje: `Hola ${nombre}, estoeselbackend jejeje`
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Escuchando en el puerto ${PORT}`)
 });
