@@ -12,6 +12,10 @@ app.use(express.static('public'));
 
 app.use(express.json());
 
+
+// Define una ruta GET en '/test'.
+// Cuando alguien accede a http://localhost:PORT/test,
+// el servidor responde con un objeto JSON.
 app.get('/test', (req, res) => {
     res.json({
         estado: "Exitoso.",
