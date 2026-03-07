@@ -15,8 +15,7 @@ app.use(express.json());
 app.get('/test', (req, res) => {
     res.json({
         estado: "Exitoso.",
-        mensaje: "Datos recibidos desde el backend",
-        estudiante: "sorri maniga"
+        mensaje: "Datos recibidos desde el backend"
     });
 });
 
