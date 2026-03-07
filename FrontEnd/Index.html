@@ -8,6 +8,7 @@
     <!--Encabezado principal-->
     <header>
         <h1>Investigación: Desarrollo de Back-end</h1>  
+        <hr>
     </header>
     <!--Main de la página-->
     <main>
@@ -28,6 +29,7 @@
                     <li>No existía separación clara entre interfaz, lógica y datos</li>
                     <li>Los cambios en el sistema eran difíciles y costosos</li>
                 </ul>
+                <hr>
             </section>
             <section>
                 <h3>1.2 Segunda etapa: Arquitectura cliente-servidor (1990)</h3>
@@ -45,6 +47,7 @@
                     <li>Almacenamiento de datos</li>
                 </ul>
                 <p>Esto dio origen a la separación entre <strong>Front-End y Back-End.</strong></p>
+                <hr>
             </section>
             <section>
                 <h3>1.3 Tercera etapa: Desarrollo web moderno (2000–2015)</h3>
@@ -57,7 +60,8 @@
                     <li>Node.js</li>
                 </ul>
                 <p>Frameworks como <strong>Django</strong> popularizaron el uso del patrón <strong>MVC</strong> para organizar el código 
-                    y facilitar el desarrollo de aplicaciones complejas.</p>                      
+                    y facilitar el desarrollo de aplicaciones complejas.</p>
+                <hr>                      
             </section>
             <section>
                 <h3>1.4 Cuarta etapa: Arquitectura basada en servicios (2015–actualidad)</h3>
@@ -70,21 +74,296 @@
                 </ul>
                 <p>Las aplicaciones actuales suelen estar compuestas por múltiples servicios que se comunican entre 
                 sí mediante <strong>APIs REST</strong>, lo que permite que diferentes sistemas interactúen entre sí.</p>
+                <hr>
             </section>
         </article>
         <!--Artículo sobre la diferencia entre Front Y Back-->
         <article>
             <h2>2. Diferencia entre Front-End y Back-End</h2>
             <p>En el desarrollo web existen dos partes principales: </p>
+            <!--Sección de Front-End-->
             <section>
                 <h3>Front-End</h3>
                 <p>El <strong>Front-End</strong> es la parte visible de una aplicación web.</p>
                 <br>
                 <p>Es lo que el usuario ve y con lo que interactúa.</p>
+                <br>
+                <p>Incluye: </p>
+                <ul>
+                    <li>Diseño de Interfaces</li>
+                    <li>Botones</li>
+                    <li>Formularios</li>
+                    <li>Animaciones</li>
+                    <li>Navegación</li>
+                </ul>
+                <p>Tecnologías principales:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Frameworks como Angular, React o Vue</li>
+                </ul>
+                <hr>
+            </section>
+            <!--Sección de Back-End-->
+            <section>
+                <h3>Back-End</h3>
+                <p>El <strong>Back-End</strong> es la parte del sistema que funciona detrás del servidor.</p>
+                <br>
+                <p>Se encarga de: </p>
+                <ul>
+                    <li>Procesar datos</li>
+                    <li>Manejar lógica del sistema</li>
+                    <li>Conectarse con bases de datos</li>
+                    <li>Gestionar autenticación</li>
+                    <li>Exponer APIs</li>
+                </ul>
+                <p>Por ejemplo: </p>
+                <p>Cuando un usuario inicia sesión:</p>
+                <ol>
+                    <li>El Front-End envía datos al servidor</li>
+                    <li>El Back-End valida el usuario</li>
+                    <li>Consulta la base de datos</li>
+                    <li>Devuelve una respuesta</li>
+                </ol>
+                <p>Las APIs permiten que el frontend solicite datos al backend y definan qué información se expone y cómo debe solicitarse.</p>
+                <hr>
             </section>
         </article>
+        <!--Articulo sobre el modelo vista controlador-->
+        <article>
+            <p>El <strong>MVC</strong> es un patrón de arquitectura de software muy utilizado en aplicaciones web.</p>
+            <p>MVC significa: </p>
+            <ul>
+                <li><strong>Modelo (Model)</strong></li>
+                <li><strong>Vista (View)</strong></li>
+                <li><strong>Controlador (Controller)</strong></li>
+            </ul>
+            <p>Este pátron permite <strong>separar responsabilidades dentro del software.</strong></p>
+            <hr>
+            <!--Sección del modelo-->
+            <section>
+                <h3>Modelo (Model)</h3>
+                <p>El modelo representa:</p>
+                <ul>
+                    <li>Los <strong>datos del sistema</strong></li>
+                    <li>Las <strong>reglas de negocio</strong></li>
+                    <li>La interacción con la base de datos</li>
+                </ul>
+                <p>Ejemplo: </p>
+                <ul>
+                    <li>Usuarios</li>
+                    <li>Productos</li>
+                    <li>Pedidos</li>
+                </ul>
+                <hr>
+            </section>
+            <!--Sección de la vista-->
+            <section>
+                <h3>Vista (View)</h3>
+                <p>La vista representa: </p>
+                <ul>
+                    <li>La interfaz que ve el usuario</li>
+                    <li>Los datos que se muestran en pantalla</li>
+                </ul>
+                <p>Normalmente se implementa en el <strong>frontend.</strong></p>
+                <hr>
+            </section>
+            <!--Sección del controlador-->
+            <section>
+                <h3>Controlador (Controller)</h3>
+                <p>El controlador se encarga de:</p>
+                <ul>
+                    <li>Recibir las solicitudes del usuario</li>
+                    <li>Procesar la lógica</li>
+                    <li>Comunicarse con el modelo</li>
+                    <li>Enviar respuesta a la vista</li>
+                </ul>
+                <hr>
+            </section>
+            <!--Sección del ejemplo del flujo MVC-->
+            <section>
+                <ol>
+                    <li>El Usuario hace una solicitud</li>
+                    <li>El <strong>Controlador</strong> recibe la petición</li>
+                    <li>El controlador consulta el <strong> Modelo.</strong></li>
+                    <li>El modelo devuelve datos</li>
+                    <li>El controlador envía la respuesta a la <strong> Vista</strong></li>
+                </ol>
+                <p>Este patrón permite que cada parte del sistema se desarrolle y mantenga de forma independiente.</p>
+                <hr>
+            </section>
+        </article>
+        <!--Articulo sobre la API REST-->
+        <article>
+            <h2>4. API REST</h2>
+            <p>Una <strong>API REST</strong> es un estilo de arquitectura que permite que diferentes sistemas se comuniquen entre sí a través de Internet.</p>
+            <p>REST significa:</p>
+            <span><strong>Representational State Transfer</strong></span>
+            <p>Las APIs REST utilizan principalmente el protocolo <strong>HTTP</strong>.</p>
+            <hr>
+            <!--Tabla de los métodos-->
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Método</th>
+                            <th>Función</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td>Obtener Datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>POST</td>
+                            <td>Crear Datos</td>
+                        </tr>
+                        <tr>
+                            <td>PUT</td>
+                            <td>Actualizar Datos</td>
+                        </tr>
+                        <tr>
+                            <td>DELETE</td>
+                            <td>Eliminar Datos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <!--Sección de ejemplo de API REST-->
+            <section>
+                <h3>Ejemplo de API REST</h3>
+                <p>Supongamos una API de usuarios.</p>
+                <br>
+                <p>Endpoints: </p>
+                <p>GET /usuarios</p>
+                <p>POST /usuarios</p>
+                <p>PUT /usuarios/1</p>
+                <p>DELETE /usuarios/1</p>
+                <p>Las APIs REST son muy utilizadas porque permiten <strong>integrar sistemas distribuidos y aplicaciones web modernas.</strong></p>
+                <hr>
+            </section>
+            <!--Sección de Herramientas-->
+            <section>
+                <h3>Herramientas para trabajar con APIs</h3>
+                <p>Algunas herramientas comunes son: </p>
+                <ul>
+                    <li>Swager</li>
+                    <li>Postman</li>
+                    <li>Insomnia</li>
+                </ul>
+                <p>Estas herramientas permiten diseñar, documentar y probar servicios web REST.</p>
+                <hr>
+            </section>
+        </article>
+        <!--Articulo sobre el rol de desarrollador de Back-End-->
+        <article>
+            <h2>5. Rol del desarrollador Back-End</h2>
+            <p>El <strong>Back-End Developer</strong> es el profesional encargado de desarrollar la lógica del servidor y los servicios que soportan una aplicación.</p>
+            <hr>
+            <!--Sección de funciones principales-->
+            <section>
+                <h3>Funciones principales</h3>
+                <p>Un desarrollador backend debe:</p>
+                <h3>1. Diseñar la lógica del sistema</h3>
+                <p>Implementar reglas de negocio y funcionalidades.</p>
+                <p>Ejemplo: </p>
+                <ul>
+                    <li>Registro de usuarios</li>
+                    <li>Procesamiento de pagos</li>
+                    <li>Gestión de productos</li>
+                </ul>
+                <hr>
+                <h3>2. Gestionar bases de datos</h3>
+                <p>Debe saber trabajar con:</p>
+                <p>Bases de datos SQL:</p>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                </ul>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                </ul>
+                <p>El backend depende en gran parte del manejo eficiente de los datos.</p>
+                <hr>
+                <h3>3. Crear APIs</h3>
+                <p>Los backend developers desarrollan APIs para que otras aplicaciones puedan interactuar con el sistema.</p>
+                <p>Ejemplo: </p>
+                <ul>
+                    <li>Aplicaciones móviles</li>
+                    <li>Aplicaciones web</li>
+                    <li>Sistemas externos</li>
+                </ul>
+                <hr>
+                <h3>4. Seguridad</h3>
+                <p>Debe Implementar: </p>
+                <ul>
+                    <li>Autenticación</li>
+                    <li>Autorización</li>
+                    <li>Protección contra ataques</li>
+                    <li>Manejo seguro de datos</li>
+                </ul>
+                <hr>
+                <h3>5. Optimización del rendimiento</h3>
+                <p>Incluye: </p>
+                <ul>
+                    <li>Optimizar consultas</li>
+                    <li>Manejo de caché</li>
+                    <li>Escalabilidad</li>
+                </ul>
+                <hr>
+            </section>      
+            <!--Sección de tecnologías usadas-->
+            <section>
+                <h3>Tecnologías usadas en Back-End</h3>
+                <p>Lenguajes populares: </p>
+                <ul>
+                    <li>JavaScript (Node.js)</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                    <li>Go</li>
+                </ul>
+                <p>Frameworks comunes: </p>
+                <ul>
+                    <li>Spring Boot/li>
+                    <li>Laravel</li>
+                    <li>Express</li>
+                    <li>Django</li>
+                </ul>
+                <hr>
+            </section>      
+        </article>
+        <!--Sección adicional sobre la importancia del desarrollo de Back-End-->
+        <aside>
+            <h2>6. Importancia del desarrollo Back-End</h2>
+            <p>El backend es fundamental porque: </p>
+            <ul>
+                <li>Maneja los datos del sistema</li>
+                <li>Controla la seguridad</li>
+                <li>Gestiona la lógica de negocio</li>
+                <li>Permite la comunicación entre aplicaciones</li>
+            </ul>
+            <p>Sin backend, una aplicación web sería solo una interfaz sin funcionalidad.</p>
+            <hr>
+        </aside>
+        <!--Sección de Conclusion-->
+        <aside>
+            <h2>Conclusión</h2>
+            <p>El desarrollo backend es una parte esencial del desarrollo de software moderno. A lo largo del tiempo, la evolución de las 
+                arquitecturas ha permitido separar las responsabilidades entre frontend y backend, facilitando la creación de sistemas más 
+                escalables y mantenibles. Tecnologías como el patrón MVC y las APIs REST han permitido organizar el código de manera eficiente 
+                y conectar múltiples aplicaciones a través de Internet. El rol del backend developer es clave para garantizar que los sistemas 
+                funcionen correctamente, manejen datos de forma segura y puedan escalar para soportar millones de usuarios.</p>
+            <hr>
+        </aside>
     </main>
-    <!-- Footer -->
+    <!-- Footer de la página -->
     <footer>
         <p>Bogotá del año 2026</p>
     </footer>
